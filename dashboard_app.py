@@ -34,7 +34,7 @@ df_dist, df_item, nama_file = muat_data()
 if df_dist is None or df_item is None:
     st.error("❌ File laporan gabungan Excel tidak ditemukan di Desktop! Pastikan kamu sudah menjalankan script penggabung sebelumnya.")
 else:
-    st.info(f"📂 Menggunakan sumber data dari: **{nama_file}**")
+    #st.info(f"📂 Menggunakan sumber data dari: **{nama_file}**")
     
     # Ambil daftar kolom bulan saja
     kolom_bulan_dist = [c for c in df_dist.columns if c not in ['Nama Distributor', 'Rata-rata Semua Bulan']]
